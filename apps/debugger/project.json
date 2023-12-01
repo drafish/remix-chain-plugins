@@ -15,7 +15,7 @@
         "compiler": "babel",
         "outputPath": "dist/apps/debugger",
         "index": "apps/debugger/src/index.html",
-        "baseHref": "/",
+        "baseHref": "./",
         "main": "apps/debugger/src/main.tsx",
         "polyfills": "apps/debugger/src/polyfills.ts",
         "tsConfig": "apps/debugger/tsconfig.app.json",
@@ -44,6 +44,7 @@
       "executor": "@nrwl/webpack:dev-server",
       "defaultConfiguration": "development",
       "options": {
+        "baseHref": "/",
         "buildTarget": "debugger:build",
         "hmr": true
       },
